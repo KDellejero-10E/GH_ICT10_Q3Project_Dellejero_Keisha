@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Team Checker</title>
+
+<link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+<script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+<!-- PASTE COMMON STYLE HERE -->
+
+</head>
+<body>
+
+<!-- NAVBAR HERE -->
+
+<div class="main-wrapper">
+<div class="container">
+    <h2>Team Checker</h2>
+
+    <label>Section:</label><br>
+    <select id="section">
+        <option>Ruby</option>
+        <option>Sapphire</option>
+        <option>Emerald</option>
+        <option>Topaz</option>
+    </select><br><br>
+
+    <button py-click="check_team()">Check Team</button>
+
+    <p id="result"></p>
+    <img id="team_img" width="200">
+</div>
+</div>
+
+<py-script src="team_checker.py"></py-script>
+
+</body>
+</html>

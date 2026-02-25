@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign Up</title>
+
+<link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+<script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+<!-- PASTE COMMON STYLE HERE -->
+
+</head>
+<body>
+
+<!-- NAVBAR HERE -->
+
+<div class="main-wrapper">
+<div class="container">
+    <h2>Create Account</h2>
+
+    <label>Username:</label><br>
+    <input type="text" id="username"><br><br>
+
+    <label>Password:</label><br>
+    <input type="password" id="password"><br><br>
+
+    <button py-click="create_account()">Sign Up</button>
+
+    <p id="message"></p>
+</div>
+</div>
+
+<py-script src="signup.py"></py-script>
+
+</body>
+</html>
