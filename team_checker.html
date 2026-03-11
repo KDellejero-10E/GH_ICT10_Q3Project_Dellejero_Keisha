@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Team Checker</title>
+
+<link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+<script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+</head>
+<body>
+
+<nav>
+<a href="players.html">Players</a> |
+<a href="signup.html">Sign Up</a> |
+<a href="team_checker.html">Team Checker</a>
+</nav>
+<hr>
+
+<div class="main-wrapper">
+<div class="container">
+<h2>Team Checker</h2>
+
+<label>Section:</label><br>
+<select id="section">
+<option>Ruby</option>
+<option>Sapphire</option>
+<option>Emerald</option>
+<option>Topaz</option>
+</select>
+<br><br>
+
+<button py-click="check_team()">Check Team</button>
+
+<p id="result"></p>
+
+<img id="team_img" width="200">
+
+</div>
+</div>
+
+<py-script src="team_checker.py"></py-script>
+
+</body>
+</html>
